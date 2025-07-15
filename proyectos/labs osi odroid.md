@@ -17,7 +17,7 @@ In this lab, we will explore the seven layers of the OSI (Open Systems Interconn
 
 * **Concept:** Organizes bits into frames, manages access to the physical medium, and provides physical addressing (MAC addresses).
 * **Tools:** ARP (Address Resolution Protocol), Ethernet, Wi-Fi.
-* **Observation Lab (ARP):**
+* **Observation Lab (ARP):**The MAC address is an important element because it is the essential basis of communication, along with the IP address. ARP gives you a clear view of the communication and conversion of the IP and MAC addresses. 
 1.  Make sure your Odroid's network interface (`eth0`) is in promiscuous mode: `sudo ip link set eth0 promisc on`
     2.  Start capturing ARP traffic: `sudo tshark -i eth0 -f “arp”`
 3.  From your MacBook (or any other device on the same network), `ping` another device other than the Odroid (e.g., your Smart TV or your router if you haven't pinged it recently).
